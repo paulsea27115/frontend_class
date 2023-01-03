@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+.granma{
+    width: 600px;
+    border-color: #eee;
+}
 .parent{
     width: 400px;
     background-color: #efefef;   
