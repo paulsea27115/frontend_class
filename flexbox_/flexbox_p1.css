@@ -53,6 +53,7 @@ body {
   background-color: #fff;
   border-radius: 90px;
   padding:5px;
+  min-width: min-content;
 }
 .profile-detail{
   display: flex;
