@@ -7,16 +7,18 @@
     border-color: #eee;
 }
 .parent{
-    width: 400px;
+    width: 600px;
+    height: 800px;
+    display: flex;
     background-color: #efefef;   
-    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .child{
-    width: 200px;
+    width: 300px;
     height: 200px;
     text-align: center;
     line-height: 200px;
-    float: left;
 }
 .red{
     background-color: rgb(255, 89, 89);
