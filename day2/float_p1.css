@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -0.02em;
+    background-color: rgb(206, 205, 205);
+  }
+  a {
+    font-size: 18px;
+    line-height: 20px;
+    color: #8492a6;
+    text-decoration: none;
+  }
+  
+    /*
+    1. 동그라미 표시 제거 V
+    2. 각각의 아이템을 가로로 배치 V -> sideEffect로 부모의 높이가 0
+    3. 양 옆에 여백(padding) 필요
+    4. 아이템(li) 사이에 간격(margin) 필요 V
+    5. 선택된 아이템의 경우에는 두께 및 밑줄 추가
+    -> class에 active라는 요소를 추가
+    */
+
+  ul{
+    width: 29.5rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+  }
+  .tab-menu {
+    list-style-type: none;
+    padding-left: 0;
+    border-bottom: 1px solid #e5eaef;
+  }
+  .tab-menu::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .tab-menu-item {
+    float: left;
+    margin-left: 15px;
+  }
+  .tab-menu-item a {
+    display: block;
+    padding: 16px 20px;
+  }
+  .tab-menu-item:hover {
+    border-bottom: 2px solid skyblue;
+  }
+  .tab-menu-item:hover a {
+    font-weight: 700;
+    color: skyblue;
+  }
