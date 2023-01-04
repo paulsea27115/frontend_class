@@ -42,17 +42,17 @@ body {
 /* ▼ WHERE YOUR CODE BEGINS */
 
 .profile{
+  display: flex;
+  flex-direction: column;
   width: 24%;
   height: 75%;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
   background-color: #fff;
   border-radius: 90px;
   padding:5px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   min-width: min-content;
 }
 .profile-detail{
