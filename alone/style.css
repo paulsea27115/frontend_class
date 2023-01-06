@@ -17,17 +17,16 @@ body{
 }
 
 /* header */
-
 #header{
-    height: 100px;
+    height: 50px;
 }
 
 /* nav */
-
 nav{
     height: 45px;
     width: 100%;
     background-color: #fff;
+    margin-bottom: 10px;
     /* border-top-left-radius: 5px;
     border-bottom-left-radius: 5px; */
     border-radius: 3px;
@@ -59,36 +58,44 @@ nav{
 li a:hover{
     animation: color-nav;
     animation-duration: 0.5s;
+
     color: rgb(36, 220, 223);
     border-bottom: 1.5px solid rgb(41, 244, 248);
     padding-bottom: 3px;
 }
 a{
-    color: black;
+    color: rgb(54, 54, 54);
     text-decoration: none;
 }
 @keyframes color-nav{
     0% {
-        color: rgb(46, 46, 46);
-        border-bottom: 0px solid black;
+        color: rgb(54, 54, 54);
+        border-bottom: 0px solid rgb(54, 54, 54);
+    }
+    50% {
+        color: rgb(35, 223, 226);
     }
     100% {
-        color: rgb(36, 220, 223);
+        color: rgb(49, 236, 183);
         border-bottom: 1.5px solid rgb(41, 244, 248);
     }
-  }
-/* main */
+}
 
+/* main */
 #main{
     height: 750px;
-    width: 850px;
+    width: 900px;
+    display: grid;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 5px 5px 15px 2px rgb(180, 191, 197);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,minmax(50px,auto));;
 }
 
 /* footer */
-
 #footer{
     height: auto;
     text-align: center;
+    line-height: 3rem;
 }
-
-
