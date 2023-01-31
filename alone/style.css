@@ -8,7 +8,7 @@ body{
     margin-right: 200px;
     display: flex;
     justify-content: center;
-    background-color: #eff3f4;
+    background-color: #d2d4d5;
 }
 .container{
     display: grid;
@@ -49,7 +49,7 @@ nav{
 .menu li::after {
     content:"";
     top: 4px;
-    left: -9px;
+    left: -10px;
     position: absolute; 
     height: 60%; 
     width: 2px;
@@ -73,11 +73,11 @@ a{
         border-bottom: 0px solid rgb(54, 54, 54);
     }
     50% {
-        color: rgb(35, 223, 226);
+        color: rgb(84, 124, 124);
     }
     100% {
         color: rgb(49, 236, 183);
-        border-bottom: 1.5px solid rgb(41, 244, 248);
+        border-bottom: 1px solid rgb(41, 244, 248);
     }
 }
 
@@ -85,12 +85,88 @@ a{
 #main{
     height: 750px;
     width: 900px;
-    display: grid;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 5px 5px 15px 2px rgb(180, 191, 197);
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,minmax(50px,auto));;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 450px;
+    position: relative;
+    margin: auto;
+    margin-top: 1rem;
+}
+.mySlides {
+    display: none;
+}
+img{
+    border-radius: 2px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 /* footer */
