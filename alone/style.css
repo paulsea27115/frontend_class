@@ -3,41 +3,35 @@
     margin: 0;
 }
 body{
-    height: 100vh;
-    margin-left: 200px;
-    margin-right: 200px;
-    display: flex;
+    height: 100%;
+    width: 100%;
+    min-width: 1240px;
+    display: block;
     justify-content: center;
-    background-color: #d2d4d5;
-}
-.container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,minmax(50px,auto));;
 }
 
 /* header */
 #header{
-    height: 50px;
+    height: auto;
+    width: auto;
 }
 
 /* nav */
 nav{
-    height: 45px;
-    width: 100%;
+    font-size: 20px;
+    height: 60px;
     background-color: #fff;
     margin-bottom: 10px;
-    /* border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px; */
     border-radius: 3px;
     box-shadow: 5px 6px 15px 1px rgb(180, 191, 197);
 }
 .menu{
     display: flex;
+    height: 100%;
     list-style-type: none;
     padding: 0;
+    align-items: center ;
     justify-content: flex-end;
-
 }
 .menu li{
     position: relative;
@@ -51,7 +45,7 @@ nav{
     top: 4px;
     left: -10px;
     position: absolute; 
-    height: 60%; 
+    height: 70%; 
     width: 2px;
     background-color: rgb(218, 224, 227);
 }
@@ -72,9 +66,6 @@ a{
         color: rgb(54, 54, 54);
         border-bottom: 0px solid rgb(54, 54, 54);
     }
-    50% {
-        color: rgb(84, 124, 124);
-    }
     100% {
         color: rgb(49, 236, 183);
         border-bottom: 1px solid rgb(41, 244, 248);
@@ -83,8 +74,8 @@ a{
 
 /* main */
 #main{
-    height: 750px;
-    width: 900px;
+    height: 850px;
+    width: 100%;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 5px 5px 15px 2px rgb(180, 191, 197);
@@ -93,13 +84,17 @@ a{
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 450px;
+    width: 100%;
+    height: 600px;
     position: relative;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 1rem; 
+    overflow: hidden;
 }
 .mySlides {
-    display: none;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
 }
 img{
     border-radius: 2px;
@@ -113,7 +108,7 @@ img{
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.6s ease;  
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -125,7 +120,6 @@ img{
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
-
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -134,16 +128,14 @@ img{
     bottom: 8px;
     width: 100%;
     text-align: center;
-}
-  
+} 
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
+    font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
 }
-  
 .dot {
     cursor: pointer;
     height: 10px;
@@ -154,16 +146,13 @@ img{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
     background-color: #717171;
 }
-
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
