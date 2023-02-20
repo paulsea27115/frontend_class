@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    color: #fff;
+}
+
+.child{
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    background-color: #fff;
+    color: skyblue;
+    text-align: center;
+}
+
+/* .box:after{
+    content: "Moblie";
+} */
+
+@media screen and (min-width: 480px) {
+    .box{
+        background-color: rgb(85, 85, 255);
+    }
+    /* .box:after{
+        content: "가로 화면 Moblie";
+
+    } */
+}
+
+@media screen and (min-width: 768px) {
+    .box{
+        background-color: rgb(134, 47, 255);
+    }
+    /* .box:after{
+        content: "Tablet";
+
+    } */
+}
+
+@media  screen and (min-width:1280px){
+    .box{
+        background-color: rgb(231, 21, 137);
+    }
+    /* .box:after{
+        content: "Desktop";
+    } */
+}

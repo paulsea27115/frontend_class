@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "KIMM_Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2")
+      format("woff2");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  * {
+    font-family: "KIMM_Bold", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .grandma {
+    width: 800px;
+    background-color: rgb(228, 245, 239);
+    margin: 0 auto;
+  }
+  
+  .parent {
+    width: 600px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .child {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+  }
+  
+  .red {
+    background-color: rgb(197, 110, 110);
+  }
+  
+  .red:active {
+    background-color: black;
+  }
+  
+  .yellow {
+    background-color: rgb(219, 219, 121);
+  }
+  
+  .blue {
+    background-color: rgb(114, 114, 193);
+  }
+  
+  input:disabled {
+    background-color: red;
+  }
+  a {
+    color: red;
+  }
+  
+  a:visited {
+    color: rgb(0, 128, 49);
+  }
+  
+  /* li:first-child {
+    color: aqua;
+  }
+  li:last-child {
+    color: violet;
+  } */
+  
+  li:nth-of-type(2n + 1) {
+    color: rgb(44, 209, 60);
+  }
+  
+  div {
+    margin: 0 auto;
+    background-color: rgb(129, 200, 177);
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    transition: all 1s ease-in 0.5s;
+  }
+  
+  div:hover {
+    animation: expand 1s infinite alternate;
+  }
+  
+  @keyframes expand {
+    from {
+      transform: scale(1.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
